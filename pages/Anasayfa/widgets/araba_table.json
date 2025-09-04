@@ -36,10 +36,12 @@
     "id",
     "marka",
     "model",
+    "kat_isim",
     "yil",
-    "customColumn1"
+    "customColumn1",
+    "kategori_id"
   ],
-  "columnUpdatedAt": 1756907079746,
+  "columnUpdatedAt": 1756977827058,
   "columnWidthMap": {
     "yil": 237
   },
@@ -56,10 +58,19 @@
       "key": "accentColor"
     },
     {
+      "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
       "key": "tableData"
     },
     {
-      "key": "totalRecordsCount"
+      "key": "primaryColumns.id.computedValue"
     },
     {
       "key": "primaryColumns.marka.computedValue"
@@ -71,13 +82,10 @@
       "key": "primaryColumns.yil.computedValue"
     },
     {
-      "key": "primaryColumns.id.computedValue"
+      "key": "primaryColumns.kat_isim.computedValue"
     },
     {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn1.boxShadow"
+      "key": "primaryColumns.kategori_id.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -110,6 +118,7 @@
   "flexVerticalAlignment": "start",
   "fontStyle": "",
   "horizontalAlignment": "LEFT",
+  "iconAlign": "left",
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
   "isSortable": true,
@@ -127,7 +136,7 @@
   "mobileRightColumn": 51,
   "mobileTopRow": 16,
   "needsErrorInfo": false,
-  "onAddNewRowSave": "{{Insert_public_arabalar1.run(() => {\n            showAlert(\"Successfully created!\");\n            Select_public_arabalar1.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
+  "onAddNewRowSave": "{{Insert_public_araclar.run(() => {\n            showAlert(\"Successfully created!\");\n            Select_public_arabalar1.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
   "onPageChange": "{{\n            Select_public_arabalar1.run();\n            Total_record_public_arabalar1.run()\n          }}",
   "onSearchTextChanged": "{{\n            Select_public_arabalar1.run();\n            Total_record_public_arabalar1.run()\n          }}",
   "onSort": "{{\n            Select_public_arabalar1.run();\n            Total_record_public_arabalar1.run()\n          }}",
@@ -177,8 +186,8 @@
       "isVisible": true,
       "label": "İşlemler",
       "labelColor": "#FFFFFF",
-      "menuButtonLabel": "Open Menu",
-      "menuButtoniconName": "list",
+      "menuButtonLabel": "Menu",
+      "menuButtoniconName": "menu",
       "menuColor": "#3b82f6",
       "menuItems": {
         "menuIteme1ppt01o3h": {
@@ -198,7 +207,7 @@
           "isDisabled": false,
           "isVisible": true,
           "label": "Düzenle",
-          "onClick": "{{showModal(editModal.name);}}",
+          "onClick": "{{get_all_kategoriler.run().then(() => {\n  showModal(editModal.name);\n});}}",
           "textColor": "#18181b",
           "widgetId": "5ziqqrbkiq"
         }
@@ -229,7 +238,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "id",
-      "index": 3,
+      "index": 0,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -238,9 +247,77 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "id",
+      "label": "ID",
       "notation": "standard",
       "originalId": "id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "kat_isim": {
+      "alias": "kat_isim",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = araba_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"kat_isim\"])) : kat_isim })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "kat_isim",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Kategori",
+      "notation": "standard",
+      "originalId": "kat_isim",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "kategori_id": {
+      "alias": "kategori_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = araba_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"kategori_id\"])) : kategori_id })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "kategori_id",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "kategori_id",
+      "notation": "standard",
+      "originalId": "kategori_id",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -263,7 +340,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "marka",
-      "index": 0,
+      "index": 1,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -297,7 +374,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "model",
-      "index": 1,
+      "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -331,7 +408,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "yil",
-      "index": 2,
+      "index": 3,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -358,7 +435,7 @@
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{Select_public_arabalar1.data}}",
+  "tableData": "{{Select_public_araclar2.data}}",
   "textSize": "0.875rem",
   "topRow": 10,
   "totalRecordsCount": "{{Total_record_public_arabalar1.data[0].count}}",

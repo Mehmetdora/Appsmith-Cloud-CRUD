@@ -1,0 +1,3 @@
+UPDATE araclar
+SET marka = {{edit_input_marka.text}}, model = {{edit_input_model.text}}, yil = {{edit_input_yil.text}}, kategori_id = {{kategori_select.selectedOptionValue}}
+WHERE id = {{this.params.id}};

@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  public.kategoriler
+WHERE
+  "kat_isim" ilike '%{{kategoriTable.searchText}}%'
+ORDER BY
+  "{{kategoriTable.sortOrder.column || 'kat_id'}}" {{kategoriTable.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{kategoriTable.pageSize}}
+OFFSET
+  {{kategoriTable.pageOffset}}

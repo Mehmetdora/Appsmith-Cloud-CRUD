@@ -1,0 +1,3 @@
+SELECT kat_id FROM public."kategoriler"
+WHERE kat_id = {{this.params.kat_isim}}
+LIMIT 1;

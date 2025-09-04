@@ -1,0 +1,3 @@
+UPDATE kategoriler
+SET kat_isim = {{kategori_edit_input.text}}
+WHERE kat_id = {{this.params.id}};

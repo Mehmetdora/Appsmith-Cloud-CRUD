@@ -1,0 +1,1 @@
+UPDATE public.kategoriler SET "isim"= '{{kategoriTable.updatedRow.isim}}' WHERE "id"= {{kategoriTable.updatedRow.id}};

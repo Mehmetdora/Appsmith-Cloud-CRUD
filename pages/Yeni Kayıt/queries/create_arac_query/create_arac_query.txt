@@ -1,0 +1,2 @@
+INSERT INTO araclar (marka,model,yil,kategori_id)
+VALUES ({{marka_input.text}},{{model_input.text}},{{yil_input.text}},{{kategori_select.selectedOptionValue}});

@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{delete_araba.run({\n  \"id\": araba_table.triggeredRow.id\n}).then(() => {\n  showAlert('Kayıt Başarışla Silindi!', 'success');\n  closeModal(deleteModal.name);\n  Select_public_arabalar1.run();\n}).catch(() => {\n  showAlert('Silme Sırasında Hata Oluştu!', 'error');\n});}}",
+  "onClick": "{{delete_arac.run({\n  \"id\": araba_table.triggeredRow.id\n}).then(() => {\n  showAlert('Kayıt Başarışla Silindi!', 'success');\n  closeModal(deleteModal.name);\n  Select_public_araclar2.run();\n}).catch(() => {\n  showAlert('Silme Sırasında Hata Oluştu!', 'error');\n});}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "047jcq2kwv",

@@ -1,0 +1,1 @@
+SELECT COUNT(*) from public.kategoriler where kat_isim ilike '%{{kategoriTable.searchText}}%';

@@ -29,7 +29,7 @@
     ],
     "name": "Select_public_arabalar1",
     "pageId": "Anasayfa",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

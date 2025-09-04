@@ -1,2 +1,0 @@
-DELETE FROM arabalar
-WHERE id = '{{this.params.id}}';

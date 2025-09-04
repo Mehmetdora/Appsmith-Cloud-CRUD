@@ -1,3 +1,0 @@
-UPDATE arabalar
-SET marka = {{edit_input_marka.text}}, model = {{edit_input_model.text}}, yil = {{edit_input_yil.text}}
-WHERE id = {{this.params.id}};

@@ -1,0 +1,3 @@
+SELECT isim FROM public."kategoriler"
+WHERE id = {{this.params.id}}
+LIMIT 1;

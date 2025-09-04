@@ -6,7 +6,7 @@ export default {
 		
 		
 		console.log(marka,model,yil);
-		create_araba_query.run({marka,model,yil});
+		create_arac_query.run({marka,model,yil});
 		
 		
 		

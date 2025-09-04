@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  public.araclar
+WHERE
+  "model" ilike '%{{araba_table.searchText}}%'
+ORDER BY
+  "{{araba_table.sortOrder.column || 'id'}}" {{araba_table.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{araba_table.pageSize}}
+OFFSET
+  {{araba_table.pageOffset}}

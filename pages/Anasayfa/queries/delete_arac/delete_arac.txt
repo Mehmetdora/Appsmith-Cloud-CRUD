@@ -1,0 +1,2 @@
+DELETE FROM araclar
+WHERE id = '{{this.params.id}}';
