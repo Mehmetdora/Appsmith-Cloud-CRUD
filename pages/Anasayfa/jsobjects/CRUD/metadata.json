@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "68b68c984bf44f0c6aaa481d_52f1436a-7ce0-44eb-bf93-da89778dfa86",
+  "id": "Anasayfa_CRUD",
+  "unpublishedCollection": {
+    "name": "CRUD",
+    "pageId": "Anasayfa",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

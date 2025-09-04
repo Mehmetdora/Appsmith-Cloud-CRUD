@@ -1,0 +1,1 @@
+UPDATE public.arabalar SET "marka"= '{{araba_table.updatedRow.marka}}', "model"= '{{araba_table.updatedRow.model}}', "yil"= '{{araba_table.updatedRow.yil}}' WHERE "id"= {{araba_table.updatedRow.id}};

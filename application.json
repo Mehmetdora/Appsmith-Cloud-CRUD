@@ -1,0 +1,17 @@
+{
+  "appIsExample": false,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#F3F1C7",
+  "evaluationVersion": 2,
+  "pages": [
+    {
+      "id": "Anasayfa",
+      "isDefault": true
+    },
+    {
+      "id": "Yeni Kayıt",
+      "isDefault": false
+    }
+  ]
+}

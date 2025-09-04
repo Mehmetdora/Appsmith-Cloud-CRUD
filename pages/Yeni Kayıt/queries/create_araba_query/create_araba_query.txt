@@ -1,0 +1,2 @@
+INSERT INTO arabalar (marka,model,yil)
+VALUES ({{marka_input.text}},{{model_input.text}},{{yil_input.text}});

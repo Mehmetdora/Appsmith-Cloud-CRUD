@@ -1,0 +1,1 @@
+SELECT COUNT(*) from public.arabalar where model ilike '%{{araba_table.searchText}}%';

@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "68b68c984bf44f0c6aaa481d_41fe5723-1bb0-45a2-83df-2015ec5d782b",
+  "id": "Yeni Kayıt_arabalar_crud",
+  "unpublishedCollection": {
+    "name": "arabalar_crud",
+    "pageId": "Yeni Kayıt",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

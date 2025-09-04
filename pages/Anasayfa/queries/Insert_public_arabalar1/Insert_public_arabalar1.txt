@@ -1,0 +1,1 @@
+INSERT INTO public.arabalar ("marka","model","yil") VALUES ('{{(araba_table.newRow || {}).marka}}','{{(araba_table.newRow || {}).model}}','{{(araba_table.newRow || {}).yil}}')
